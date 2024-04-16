@@ -23,11 +23,14 @@
     font-size: var(--size-sm);
     color: var(--clr-slate400);
 }
-
+.about-edu{
+    color: var(--clr-amaranth);
+}
 .about-ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    /* ↓↓ Change list style to unicode ↓↓ */
     list-style-type: '\1F449';
     padding-left: 1.2em;
 }
@@ -38,6 +41,7 @@
 }
 
 .about-list::before {
+    /* ↓↓ Apply space between list styles and content ↓↓ */
     content: '';
     margin-left: 0.5em;
 }
@@ -72,7 +76,7 @@
     }
 
     .about-description {
-        text-align: center;
+        text-align: left;
         font-size: var(--size-lg);
     }
 

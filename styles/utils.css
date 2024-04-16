@@ -48,17 +48,18 @@
     }
 }
 
+/* ↓↓ At size breakpoints limit the content container maximum sizes ↓↓ */
 /* md */
 @media (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 691px;
     }
 }
 
 /* lg */
 @media (min-width: 1024px) {
     .container {
-        max-width: 1024px;
+        max-width: 922px;
     }
 
     .section {
@@ -69,13 +70,13 @@
 /* xl */
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        max-width: 1152px;
     }
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
     .container {
-        max-width: 1536px;
+        max-width: 1382px;
     }
 }

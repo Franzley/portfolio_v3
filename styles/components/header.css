@@ -6,10 +6,12 @@
     padding-bottom: 2rem;
 }
 
+/* ↓↓ Hide menu when page is on small screens ↓↓ */
 .header-menu {
     display: none;
 }
-.header-bars{
+
+.header-bars {
     color: var(--clr-light);
     width: var(--size-2xl);
     height: var(--size-2xl);
@@ -45,7 +47,7 @@
     }
 
     .header-sun {
-        display: block;
+        vertical-align: middle;
         color: var(--clr-slate600);
         width: var(--size-base);
         height: var(--size-base);
@@ -54,17 +56,18 @@
     .header-resume {
         font-size: var(--size-xs);
     }
-    .header-bars{
+
+    /* ↓↓ Hide menu bars on large screens ↓↓ */
+    .header-bars {
         display: none;
     }
-    
+
 }
 
 /* lg */
 @media (min-width: 1024px) {
     .header-link {
         font-size: var(--size-sm);
-
     }
 
     .header-sun {
