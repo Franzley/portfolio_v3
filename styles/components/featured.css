@@ -67,14 +67,14 @@
     z-index: 1;
     transition: background-color 0.3s;
 }
+.featured-img-wrapper:hover::after{
+    background: rgba(79, 70, 229, 0.1);
+}
 .featured-image-container{
     margin-top: 1rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.featured-img-wrapper:hover::after{
-    background: rgba(79, 70, 229, 0.1);
 }
 /* xs */
 @media (min-width: 475px) {

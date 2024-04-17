@@ -1,0 +1,241 @@
+.project {
+    text-align: center;
+}
+
+.project-subsection {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+}
+
+.project-subsection-description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem auto;
+}
+
+.project-title {
+    font-size: var(--size-base);
+    margin-bottom: 1rem;
+}
+
+.project-img-wrapper {
+    position: relative;
+}
+
+.project-img-wrapper::after {
+    content: '';
+    background: rgba(79, 70, 229, 0.25);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.project-img-wrapper:hover::after {
+    background: rgba(79, 70, 229, 0.15);
+}
+
+.project-description1 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem 0;
+}
+
+.project-description2 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+    margin-bottom: 1rem;
+}
+
+.project-button {
+    font-size: var(--size-sm);
+}
+
+.project-description-wrapper:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.project-subtitle {
+    display: none;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .project-subsection {
+        font-size: var(--size-3xl);
+    }
+
+    .project-subsection-description {
+        font-size: var(--size-base);
+        margin: 1.5rem auto;
+    }
+
+    .project-title {
+        font-size: var(--size-lg);
+        margin-bottom: 1.5rem;
+    }
+
+    .project-description1 {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+    .project-description2 {
+        font-size: var(--size-base);
+        margin-bottom: 1.5rem;
+    }
+
+    .project-button {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'image1 content1'
+            'content2 image2';
+        place-items: center;
+    }
+
+
+    .project-image1 {
+        grid-area: image1;
+    }
+
+    .project-image2 {
+        grid-area: image2;
+    }
+
+    .project-content1 {
+        grid-area: content1;
+    }
+
+    .project-content2 {
+        grid-area: content2;
+    }
+
+    .project-description-wrapper {
+        padding: 0 1rem;
+    }
+
+    .project-title {
+        display: none;
+    }
+
+    .project-description1 {
+        font-size: var(--size-xs);
+        margin: 1em 0;
+    }
+
+    .project-description2 {
+        font-size: var(--size-xs);
+        margin-bottom: 1em;
+    }
+
+    .project-button {
+        font-size: var(--size-xs);
+    }
+
+    .project-description-wrapper:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .project-subtitle {
+        display: block;
+        font-size: var(--size-base);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .project-description1 {
+        font-size: var(--size-sm);
+    }
+
+    .project-description2 {
+        font-size: var(--size-sm);
+    }
+
+    .project-button {
+        font-size: var(--size-sm);
+    }
+
+    .project-subtitle {
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .project_title {
+        font-size: var(--size-4xl);
+    }
+
+    .project-subsection-description {
+        font-size: var(--size-lg);
+    }
+
+    .project-description1 {
+        font-size: var(--size-base);
+    }
+
+    .project-description2 {
+        font-size: var(--size-base);
+    }
+
+    .project-button {
+        font-size: var(--size-base);
+    }
+
+    .project-subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .project_title {
+        font-size: var(--size-5xl);
+    }
+
+    .project-subsection-description {
+        font-size: var(--size-xl);
+        margin: 2rem auto;
+    }
+
+    .project-description1 {
+        font-size: var(--size-lg);
+    }
+
+    .project-description2 {
+        font-size: var(--size-lg);
+    }
+
+    .project-button {
+        font-size: var(--size-lg);
+    }
+
+    .project-subtitle {
+        font-size: var(--size-2xl);
+    }
+    .projects-container{
+        /* width: 80%; */
+        /* margin: 0 auto; */
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .projects-container{
+        /* width: 70%; */
+        /* margin: 0 auto; */
+    }
+}
