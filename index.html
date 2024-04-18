@@ -27,13 +27,15 @@
           <a class="header-link" href="#contact">Contact</a>
         </li>
         <li class="header-line"></li>
-        <li><button class="header-sun">
+        <li>
+          <button class="header-sun theme-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
             </svg>
 
-          </button></li>
+          </button>
+        </li>
         <li><a href="#" class="header-resume btn">Resume</a></li>
       </ul>
       <!-- Header-menu End -->
@@ -50,11 +52,39 @@
   </header>
   <!-- Header End -->
 
+  <!-- Mobile Nav Start -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav-menu">
+        <li>
+          <a class="mobile-nav-link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav-line"></li>
+        <li>
+          <button class="mobile-nav-sun theme-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button>
+        </li>
+        <li><a href="#" class="mobile-nav-resume btn">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Mobile Nav End -->
+
   <!-- Main Start -->
   <main>
     <!-- Hero Start -->
     <section class="hero container">
-      <img class="hero-image" src="./public/hero.jpg" alt="profile picture">
+      <img  class="hero-image" src="./public/hero.jpg" alt="profile picture">
       <h2 class="hero-subtitle">Hi, I'm Franzley <span class="hero-emote">ᵔᴥᵔ</span></h2>
       <h1 class="hero-title">FULL-STACK <br>WEB DEVELOPER.</h1>
       <p class="hero-description">A <strong>Computer Engineer</strong> with a <strong
@@ -65,7 +95,7 @@
     <!-- Hero End -->
 
     <!-- About Start -->
-    <section class="about container section">
+    <section id="about" class="about container section">
       <div class="about-content">
         <h2 class="about-title">About</h2>
 
@@ -95,7 +125,7 @@
     <!-- About End -->
 
     <!-- Featured Start -->
-    <section class="featured container section">
+    <section id="featured" class="featured container section">
       <h3 class="featured-subtitle">Featured Project</h3>
       <h2 class="featured-title">Reel Reviews</h2>
       <a href="#" class="featured-link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -170,11 +200,11 @@
       </p>
 
       <div class="projects-container">
-        
+
         <!-- Project 1 Start -->
         <h3 class="project-title">YouTube Emulation Application</h3>
         <div class="project-img-wrapper project-image1">
-          <img src="public/mytube.png" alt="mytube">
+          <img src="testimg.png" alt="mytube">
         </div>
         <div class="project-description-wrapper project-content1">
           <h3 class="project-title-alt">YouTube Emulation Application</h3>
@@ -192,7 +222,7 @@
         <!-- Project 2 Start -->
         <h3 class="project-title">Twitter Emulation Application</h3>
         <div class="project-img-wrapper project-image2">
-          <img src="public/twitterchirper.png" alt="twitter chirper emulation">
+          <img src="testimg.png" alt="twitter chirper emulation">
         </div>
         <div class="project-description-wrapper project-content2">
           <h3 class="project-title-alt">Twitter Emulation Application</h3>
@@ -206,16 +236,28 @@
           <a href="#" class="btn project-button">Demo</a>
         </div>
         <!-- Project 2 End -->
-        
+
       </div>
     </section>
     <!-- Projects End-->
 
-    <!-- <section></section> -->
+    <!-- Contact Start -->
+    <section id="contact" class="contact container section">
+      <h2 class="contact-title">Get In Contact</h2>
+      <p class="contact-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, accusamus!
+      </p>
+      <a href="mailto:franzleybonhomme003@gmail.com" class="btn contact-button" target="_blank">Let's Connect</a>
+    </section>
+    <!-- Contact End-->
+
   </main>
   <!-- Main End -->
 
-  <footer></footer>
+  <footer class="footer container section">
+    <h3 class="footer-title"><strong>ᕙ(‾̀◡‾́)ᕗ</strong> Franzley Bonhomme <strong>ᕙ(‾̀◡‾́)ᕗ</strong></h3>
+  </footer>
+
 
   <script type="module" src="./src/main.js"></script>
 </body>
