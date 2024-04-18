@@ -12,8 +12,6 @@ import '../styles/utils.css'
 
 import mobileNav from './utils/mobile-nav'
 import themeToggle from './utils/dark-mode'
-import lazyLoading from './utils/lazy-loading'
 
 mobileNav();
 themeToggle();
-// lazyLoading();
