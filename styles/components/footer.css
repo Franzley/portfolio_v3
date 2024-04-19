@@ -1,13 +1,33 @@
-.footer-title {
+.footer{
+    padding-bottom: 1.5rem;
+    user-select: none;
+}
+.footer-description {
     font-size: var(--size-xs);
     font-weight: 400;
-    color: var(--clr-slate600);
+    color: var(--clr-slate400);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    user-select: none;
+    margin-bottom: 0.5rem;
 }
 
-footer strong {
+.footer strong {
     color: var(--clr-amaranth);
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-svg{
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+    color: var(--clr-slate400);
+    transition: color 0.3s;
+}
+
+.footer-svg:hover{
+    color: var(--clr-rose);
 }
