@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     background: var(--clr-dark);
+    /* ↓↓ None by default, status changed through js on btn click ↓↓ */
     display: none;
     justify-content: center;
     align-items: center;
