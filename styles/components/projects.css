@@ -95,7 +95,8 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'image1 content1'
-            'content2 image2';
+            'content2 image2'
+            'image3 content3 ';
         place-items: center;
     }
 
@@ -114,6 +115,15 @@
 
     .project-content2 {
         grid-area: content2;
+    }
+
+    
+    .projects-image3 {
+        grid-area: image3;
+    }
+
+    .project-content3 {
+        grid-area: content3;
     }
 
     .project-description-wrapper {
