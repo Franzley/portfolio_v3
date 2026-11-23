@@ -1,0 +1,120 @@
+.experience-title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.experience-item {
+    display: grid;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--clr-slate800);
+}
+
+.experience-date {
+    font-size: var(--size-sm);
+    color: var(--clr-indigo);
+    font-weight: 600;
+}
+
+.experience-role {
+    font-size: var(--size-lg);
+    color: var(--clr-light);
+}
+
+.experience-company {
+    color: var(--clr-rose);
+}
+
+.experience-points {
+    padding-left: 1.2em;
+    display: grid;
+    gap: 0.4em;
+}
+
+.experience-points li {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    max-width: 75ch;
+}
+
+.experience-sites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+    margin-top: 0.25rem;
+}
+
+.experience-sites li {
+    font-size: var(--size-xs);
+    font-weight: 600;
+    padding: 0.35em 0.8em;
+    border: 1px solid var(--clr-slate800);
+    border-radius: 6px;
+    color: var(--clr-slate400);
+}
+
+/******************************/
+/************ xs **************/
+/******************************/
+@media (min-width: 475px) {
+    .experience-title {
+        font-size: var(--size-3xl);
+    }
+
+    .experience-points li {
+        font-size: var(--size-base);
+    }
+
+    .experience-role {
+        font-size: var(--size-xl);
+    }
+}
+
+/******************************/
+/************ lg **************/
+/******************************/
+@media (min-width: 1024px) {
+    .experience-title {
+        font-size: var(--size-4xl);
+        margin-bottom: 2.5rem;
+    }
+
+    .experience-item {
+        grid-template-columns: 14rem 1fr;
+        column-gap: 2rem;
+    }
+
+    .experience-date {
+        font-size: var(--size-base);
+        grid-row: 1 / span 3;
+    }
+
+    .experience-points li {
+        font-size: var(--size-lg);
+    }
+
+    .experience-role {
+        font-size: var(--size-2xl);
+    }
+}
+
+/******************************/
+/************ xl **************/
+/******************************/
+@media (min-width: 1280px) {
+    .experience-title {
+        font-size: var(--size-5xl);
+    }
+}

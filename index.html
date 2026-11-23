@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/63c4091414.js" crossorigin="anonymous"></script>
-  <title>Franzley Portfolio</title>
+  <title>Franzley Bonhomme | Full-Stack Web Developer</title>
+  <meta name="description" content="Franzley Bonhomme, full-stack web developer in Miami. WordPress, Shopify and React sites built fast and measured with GA4, Tag Manager and Lighthouse.">
   <link rel="stylesheet" href="./styles/modern-normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/components/header.css">
   <link rel="stylesheet" href="./styles/components/hero.css">
   <link rel="stylesheet" href="./styles/components/about.css">
+  <link rel="stylesheet" href="./styles/components/experience.css">
   <link rel="stylesheet" href="./styles/components/featured.css">
+  <link rel="stylesheet" href="./styles/components/nekoshelf.css">
   <link rel="stylesheet" href="./styles/components/projects.css">
   <link rel="stylesheet" href="./styles/components/contact.css">
   <link rel="stylesheet" href="./styles/components/footer.css">
@@ -30,6 +33,9 @@
       <ul class="header-menu">
         <li>
           <a class="header-link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header-link" href="#experience">Experience</a>
         </li>
         <li>
           <a class="header-link" href="#featured">Work</a>
@@ -73,6 +79,9 @@
           <a class="mobile-nav-link" href="#about">About</a>
         </li>
         <li>
+          <a class="mobile-nav-link" href="#experience">Experience</a>
+        </li>
+        <li>
           <a class="mobile-nav-link" href="#featured">Work</a>
         </li>
         <li>
@@ -97,12 +106,13 @@
   <main>
     <!-- Hero Start -->
     <section class="hero container">
-      <img class="hero-image" src="hero.jpg" alt="profile picture">
+      <img class="hero-image" src="1790075217505.png" alt="profile picture">
       <h2 class="hero-subtitle">Hi, I'm Franzley <span class="hero-emote">ᵔᴥᵔ</span></h2>
       <h1 class="hero-title">FULL-STACK <br>WEB DEVELOPER.</h1>
       <p class="hero-description">A <strong>Computer Engineer</strong> with a <strong
-          class="hero-degree">Bachelor's</strong> degree and solid foundation in web development with years of
-        experience. Eager to apply <strong>UI/UX</strong> skills to build stunning websites/applications.</p>
+          class="hero-degree">Bachelor's</strong> degree in Computer Engineering. I turn <strong>Figma</strong> designs into fast, responsive
+        <strong>WordPress</strong> and <strong>Shopify</strong> sites, then measure them with GA4, Tag Manager and
+        Lighthouse.</p>
       <a class="hero-btn btn" href="#contact">Let's Connect</a>
     </section>
     <!-- Hero End -->
@@ -113,8 +123,13 @@
         <h2 class="about-title">About</h2>
 
         <p class="about-description">Hey hey! I'm Franzley, a <strong>Full-stack</strong> web developer,
-          a <strong class="about-edu">Florida International University</strong> graduate, <strong>Computer
-            Engineer</strong>, and self-esteemed anime enthusiast 🍥 in Miami, FL.</p>
+          a <strong class="about-edu">Florida International University</strong> graduate (Computer Engineering, cum
+          laude), and self-esteemed anime enthusiast 🍥 in Miami, FL.</p>
+        <p class="about-description">
+          Right now I'm a web developer at <strong>Coinhub</strong>, where I look after four WordPress sites: code,
+          tracking, speed and hosting. On the side I run <strong>NekoNewsOnline</strong>, an anime and manga news site
+          on a WordPress theme I wrote, and I'm building a Shopify store with custom Liquid sections.
+        </p>
         <p class="about-description">
           I'm a very driven individual always looking forward to solving difficult challenges, big fan of strategy and
           mystery games.
@@ -127,97 +142,128 @@
 
         <h3 class="about-subtitle">Technologies</h3>
         <ul class="about-ul">
-          <li class="about-list">Javascript (ES6)</li>
-          <li class="about-list">HTML</li>
-          <li class="about-list">CSS</li>
+          <li class="about-list">JavaScript / TypeScript</li>
+          <li class="about-list">HTML &amp; CSS</li>
           <li class="about-list">ReactJS</li>
-          <li class="about-list">jQuery</li>
           <li class="about-list">NodeJS</li>
-          <li class="about-list">ExpressJS</li>
-          <li class="about-list">EmbeddedJS (EJS)</li>
+          <li class="about-list">WordPress &amp; PHP</li>
+          <li class="about-list">Shopify &amp; Liquid</li>
+          <li class="about-list">HubSpot</li>
+          <li class="about-list">Firebase / Firestore</li>
+          <li class="about-list">Cloudflare Workers</li>
+          <li class="about-list">GA4 &amp; Tag Manager</li>
+          <li class="about-list">Lighthouse / Core Web Vitals</li>
           <li class="about-list">Figma</li>
-          <li class="about-list">Photoshop</li>
-          <li class="about-list">11ty</li>
-          <li class="about-list">Decap CMS</li>
+          <li class="about-list">11ty &amp; Decap CMS</li>
+          <li class="about-list">Cloudways, Netlify, Vercel</li>
         </ul>
       </div>
     </section>
     <!-- About End -->
 
+    <!-- Experience Start -->
+    <section id="experience" class="experience container section">
+      <h2 class="experience-title">Experience</h2>
+      <ul class="experience-list">
+        <li class="experience-item">
+          <p class="experience-date">Aug 2026 – Present</p>
+          <h3 class="experience-role">Web Developer <span class="experience-company">@ Coinhub</span></h3>
+          <ul class="experience-sites">
+            <li>Coinhub ATM</li>
+            <li>Coinhub Funded</li>
+            <li>Cash2Bitcoin</li>
+            <li>LowestFeeBitcoinATMs</li>
+          </ul>
+          <ul class="experience-points">
+            <li>Develop and maintain 4 production WordPress sites, including code edits, staging, backups and recovery.</li>
+            <li>Set up GA4 and Google Tag Manager event tracking with custom triggers, tags and data layer variables.</li>
+            <li>Made sign-up page changes that increased conversions.</li>
+            <li>Ran Lighthouse audits and fixed layout shift and Largest Contentful Paint issues on mobile and desktop.</li>
+            <li>Built and embedded HubSpot forms, connected webhooks and Cloudflare Workers, and set up UTM tracking.</li>
+            <li>Manage hosting on Cloudways (servers, staging, restores) and SSH/SFTP access.</li>
+          </ul>
+        </li>
+        <li class="experience-item">
+          <p class="experience-date">Aug 2022 – Dec 2022</p>
+          <h3 class="experience-role">Web Developer Teaching Assistant <span class="experience-company">@ 4Geeks Academy</span></h3>
+          <ul class="experience-points">
+            <li>Mentored students in full-stack web development, front end and back end.</li>
+            <li>Reinforced core concepts in React, JavaScript, APIs and wireframes.</li>
+            <li>Helped the cohort reach an 80% graduation rate with one-on-one support in and outside class.</li>
+            <li>Taught version control: GitHub repositories, pushes and pull requests.</li>
+          </ul>
+        </li>
+        <li class="experience-item">
+          <p class="experience-date">Freelance</p>
+          <h3 class="experience-role">Web Development, IT Support &amp; PC Builds</h3>
+          <ul class="experience-points">
+            <li>Design client sites in Figma, build them mobile-first and hand over a CMS so clients can edit their own pages.</li>
+            <li>Build and configure custom desktop PCs; diagnose and repair hardware and software on desktops, laptops and phones.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- Experience End -->
+
     <!-- Featured Start -->
     <section id="featured" class="featured container section">
       <h3 class="featured-subtitle">Featured Project</h3>
-      <h2 class="featured-title">Reel Reviews</h2>
-      <a href="https://reelreviews.vercel.app/" target="_blank" class="featured-link">
+      <h2 class="featured-title">NekoNewsOnline</h2>
+      <a href="https://nekonewsonline.com/" target="_blank" rel="noopener" class="featured-link" aria-label="Visit NekoNewsOnline.com">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
           stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
         </svg>
       </a>
-      <p class="featured-description">During my bootcamp at 4Geeks Academy. I Collaborated with a team to design a movie
-        discovery website that allows visitors to search any movie available and create watch lists for their most
-        anticipated ones after creating their own accounts. Users can also add their already finished movies to the
-        completed list, and are able to remove any movie from their lists.
+      <p class="featured-description">An independent news site covering anime, Japanese games, manga and light novels.
+        I designed and built the whole thing: a custom <strong>WordPress</strong> block theme, a homepage with cover
+        stories, trending tags, weekly issue headers and category lanes, and contributor accounts so outside writers
+        can publish posts.
       </p>
       <p class="featured-description">
-        The <strong>ReactJS</strong> framework was used alongside <strong>HTML</strong>, <strong>CSS</strong>, and
-        <strong>Bootstrap</strong> to build the web application. We fetched the movie details from an API.
-        <br>
-        My role was to create and manage user accounts and authentication through <strong>Firebase</strong><br>
-        It also included storing the details of the movies the user selected into their personal list using
-        <strong>Firestore</strong>.
+        The part I'm proudest of is the release calendar. Each upcoming manga or light novel volume is a book spine on
+        a shelf, grouped by release day. Click a spine and the book slides out to show its cover. Releases are a
+        custom post type with date, volume, spine colour, format and publisher fields, rendered by a PHP shortcode.
       </p>
 
+      <!-- Neko shelf: rendered by src/utils/neko-shelf.js from src/data/releases.js, styles from the theme -->
+      <div class="nn-demo">
+        <div class="wp-block-group nn-shelf">
+          <div class="wp-block-group nn-sh">
+            <h4 class="wp-block-heading">New on the Shelf</h4>
+            <p class="nn-more"><a href="https://nekonewsonline.com/releases/" target="_blank" rel="noopener">All releases</a></p>
+          </div>
+          <p class="nn-shelf-hint">Tap a spine to pull the book off the shelf. Tap it again to open the release on NekoNewsOnline.</p>
+          <div data-neko-shelf></div>
+        </div>
+      </div>
+
       <!-- Featured Stacks Start -->
-      <div class="featured-info-container">
+      <div class="featured-info-container featured-info-after-demo">
         <div>
           <h3 class="featured-label">Tech Stack</h3>
           <ul class="featured-tech-stack">
-            <li class="featured-info">ReactJS</li>
-            <li class="featured-info">
-              Bootstrap
-            </li>
-            <li class="featured-info">Firebase</li>
-            <li class="featured-info">Firestore</li>
-            <li class="featured-info">APIs</li>
-            <li class="featured-info">Figma</li>
+            <li class="featured-info">WordPress block theme</li>
+            <li class="featured-info">PHP</li>
+            <li class="featured-info">Global styles</li>
+            <li class="featured-info">Custom post types</li>
+            <li class="featured-info">JavaScript</li>
+            <li class="featured-info">SEO</li>
           </ul>
         </div>
         <div>
           <h3 class="featured-label">Project Type</h3>
-          <p class="featured-info">Movie Database</p>
+          <p class="featured-info">News site &amp; release calendar</p>
         </div>
         <div>
           <h3 class="featured-label">Timeline</h3>
-          <p class="featured-info">July 2022 - August 2022</p>
+          <p class="featured-info">2026 – Present</p>
         </div>
       </div>
       <!-- Featured Stacks End -->
 
-      <!-- Featured images Start -->
-      <div class="featured-image-container">
-        <div class="featured-img-wrapper">
-          <img src="reelreviews.png" alt="Reel Reviews">
-        </div>
-        <div class="featured-img-wrapper">
-          <img src="movies.png" alt="Reel Reviews movies">
-        </div>
-        <div class="featured-img-wrapper">
-          <img src="search.png" alt="Reel Reviews search">
-        </div>
-        <div class="featured-img-wrapper">
-          <img src="login.png" alt="Reel Reviews login">
-        </div>
-        <div class="featured-img-wrapper">
-          <img src="watchlist.png" alt="Reel Reviews watchlist">
-        </div>
-        <div class="featured-img-wrapper">
-          <img src="completedlist.png" alt="Reel Reviews completed list">
-        </div>
-      </div>
-      <!-- Featured images End -->
-
+      <a href="https://nekonewsonline.com/" target="_blank" rel="noopener" class="btn featured-visit">Visit NekoNewsOnline.com</a>
     </section>
     <!-- Featured End -->
 
@@ -229,11 +275,49 @@
       <div class="projects-container">
 
         <!-- Project 1 Start -->
-        <h3 class="project-title">Nyaanime Anime Merch Shop</h3>
+        <h3 class="project-title">Hair-Oil Shopify Store</h3>
         <div class="project-img-wrapper project-image1">
-          <img src="nyaanime.netlify.app_.png" alt="nyaanime">
+          <img src="/store-hero.jpg" alt="Hair-oil store hero: amber dropper bottles on plum satin with camellia flowers">
         </div>
         <div class="project-description-wrapper project-content1">
+          <h3 class="project-title-alt">Hair-Oil Shopify Store</h3>
+
+          <p class="project-description1">A small-batch hair-oil storefront, currently in development. I prototyped it
+            as a clickable HTML wireframe, then rebuilt it on Shopify's <strong>Dawn</strong> theme with ten custom
+            <strong>Liquid</strong> sections.
+          </p>
+          <p class="project-description2">
+            Customized the header, footer, announcement bar, product page and collection grid, all version-controlled
+            with Git. Performance and accessibility passes lighthouse standards.
+          </p>
+        </div>
+        <!-- Project 1 End -->
+
+        <!-- Project 2 Start -->
+        <h3 class="project-title">Reel Reviews</h3>
+        <div class="project-img-wrapper project-image2">
+          <img src="reelreviews.png" alt="Reel Reviews">
+        </div>
+        <div class="project-description-wrapper project-content2">
+          <h3 class="project-title-alt">Reel Reviews</h3>
+
+          <p class="project-description1">During my bootcamp at 4Geeks Academy, I collaborated with a team on a movie
+            discovery site. Visitors search any movie, create an account, and keep a watch list and a completed list.
+          </p>
+          <p class="project-description2">
+            Built with ReactJS, Bootstrap and a movie API. My part was user accounts and authentication through
+            <strong>Firebase</strong>, and saving each user's lists in <strong>Firestore</strong>.
+          </p>
+          <a href="https://reelreviews.vercel.app/" target="_blank" class="btn project-button">Demo</a>
+        </div>
+        <!-- Project 2 End -->
+
+        <!-- Project 3 Start -->
+        <h3 class="project-title">Nyaanime Anime Merch Shop</h3>
+        <div class="project-img-wrapper project-image3">
+          <img src="nyaanime.netlify.app_.png" alt="nyaanime">
+        </div>
+        <div class="project-description-wrapper project-content3">
           <h3 class="project-title-alt">Nyaanime Anime Merch Shop</h3>
 
           <p class="project-description1"> Welcome to Nyaanime Shop, your go-to destination for anime merchandise! 
@@ -250,14 +334,14 @@
           </p>
           <a href="https://nyaanime.netlify.app/" target="_blank" class="btn project-button">Demo</a>
         </div>
-        <!-- Project 1 End -->
+        <!-- Project 3 End -->
 
-        <!-- Project 2 Start -->
+        <!-- Project 4 Start -->
         <h3 class="project-title">YouTube Emulation Application</h3>
-        <div class="project-img-wrapper project-image2">
+        <div class="project-img-wrapper project-image4">
           <img src="mytube.png" alt="mytube">
         </div>
-        <div class="project-description-wrapper project-content2">
+        <div class="project-description-wrapper project-content4">
           <h3 class="project-title-alt">YouTube Emulation Application</h3>
 
           <p class="project-description1"> I developed a full-stack web application that emulates Youtube's appearance
@@ -273,21 +357,21 @@
           </p>
           <a href="https://mytube-sigma.vercel.app/" target="_blank" class="btn project-button">Demo</a>
         </div>
-        <!-- Project 2 End -->
+        <!-- Project 4 End -->
 
-        <!-- Project 3 Start -->
+        <!-- Project 5 Start -->
         <h3 class="project-title">Lalou's Cuisine</h3>
-        <div class="project-img-wrapper project-image3">
+        <div class="project-img-wrapper project-image5">
           <img src="/lalouscuisine.netlify.app_.png" alt="Lalou's Cuisine">
         </div>
-        <div class="project-description-wrapper project-content3">
+        <div class="project-description-wrapper project-content5">
           <h3 class="project-title-alt">Lalou's Cuisine</h3>
 
           <p class="project-description1">Developed a comprehensive and user-friendly website for Lalou's Cuisine, a client with a newly opened business. The website features a responsive layout with visually appealing designs. Users can view the site on the go with mobile platforms or open on the big screen computers. Visitors can effortlessly browse the menu, see the location and get a gist of the options available and specials. Created using 11ty's static site generator and ran with Decap Content Management System.
           </p>
           <a href="https://lalouscuisine.com/" target="_blank" class="btn project-button">Demo</a>
         </div>
-        <!-- Project 3 End -->
+        <!-- Project 5 End -->
       </div>
     </section>
     <!-- Projects End-->
@@ -297,7 +381,7 @@
       <h2 class="contact-title">Get In Contact</h2>
       <p class="contact-description">
         You can reach me at my email: franzleybonhomme003@gmail.com <br>
-        Or call: (305) 778-9524
+        Or call: (786) 708-0944
       </p>
       <a href="mailto:franzleybonhomme003@gmail.com" class="btn contact-button" target="_blank">Let's Connect</a>
     </section>

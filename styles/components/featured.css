@@ -180,3 +180,17 @@
         grid-gap: 2rem;
      }
 }
+.featured-info-after-demo {
+    margin-top: 2rem;
+}
+
+.featured-visit {
+    margin-top: 2rem;
+    font-size: var(--size-sm);
+}
+
+@media (min-width: 475px) {
+    .featured-visit {
+        font-size: var(--size-base);
+    }
+}

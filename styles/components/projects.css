@@ -96,7 +96,10 @@
         grid-template-areas:
             'image1 content1'
             'content2 image2'
-            'image3 content3 ';
+            'image3 content3'
+            'content4 image4'
+            'image5 content5';
+        row-gap: 5rem;
         place-items: center;
     }
 
@@ -105,7 +108,7 @@
         grid-area: image1;
     }
 
-    .projects-image2 {
+    .project-image2 {
         grid-area: image2;
     }
 
@@ -118,12 +121,28 @@
     }
 
     
-    .projects-image3 {
+    .project-image3 {
         grid-area: image3;
     }
 
     .project-content3 {
         grid-area: content3;
+    }
+
+    .project-image4 {
+        grid-area: image4;
+    }
+
+    .project-content4 {
+        grid-area: content4;
+    }
+
+    .project-image5 {
+        grid-area: image5;
+    }
+
+    .project-content5 {
+        grid-area: content5;
     }
 
     .project-description-wrapper {

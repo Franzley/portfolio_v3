@@ -1,0 +1,363 @@
+/* NekoNews "New on the Shelf" release shelf.
+   Rules below are copied from the nekonews theme (style.css + theme.json).
+   Only the variable block and the .nn-shelf wrapper spacing are portfolio-specific. */
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/neko/nunito-v32-latin-800.woff2") format("woff2");
+}
+
+/* Theme tokens. The portfolio is dark by default, so the NekoNews dark theme is the default here. */
+.nn-demo {
+    --wp--preset--font-family--heading: Nunito, system-ui, sans-serif;
+    --wp--preset--color--pink: #d6295e;
+    --wp--preset--color--manga: #804df5;
+    --wp--preset--color--surface: #221825;
+    --wp--preset--color--surface-2: #2b1f2f;
+    --wp--preset--color--ink: #f8eef5;
+    --wp--preset--color--ink-2: #cdbdd1;
+    --wp--preset--color--plum: #120b14;
+    --wp--preset--color--pink-deep: #f0457a;
+    --nn-line: #3a2b40;
+    --nn-ink3: #93819a;
+    --nn-soft: #3d1a2a;
+    --nn-l-anime: #ffb3c9;
+    --nn-plank: #5a4462;
+    --nn-outline: #5a4462;
+    color: var(--wp--preset--color--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-align: left;
+}
+.light-mode .nn-demo {
+    --wp--preset--color--surface: #ffffff;
+    --wp--preset--color--surface-2: #fdeef3;
+    --wp--preset--color--ink: #2b1a2e;
+    --wp--preset--color--ink-2: #6b5871;
+    --wp--preset--color--plum: #2a1631;
+    --wp--preset--color--pink-deep: #c52859;
+    --nn-line: #f4dbe4;
+    --nn-ink3: #78647e;
+    --nn-soft: #ffe3ec;
+    --nn-l-anime: var(--wp--preset--color--pink-deep);
+    --nn-plank: var(--wp--preset--color--plum);
+    --nn-outline: #2b1a2e;
+}
+.nn-demo * {
+    line-height: normal;
+}
+
+/* ===== Homepage: New on the Shelf ===== */
+.wp-block-group.nn-shelf {
+    --tab: var(--wp--preset--color--manga);
+    box-sizing: border-box;
+    margin: 1.5rem 0 0;
+    padding: 0.5rem 1.5rem 2rem;
+    border: 1px solid var(--nn-line);
+    border-radius: 1rem;
+    background: var(--wp--preset--color--surface);
+}
+
+.wp-block-group.nn-sh {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.25rem;
+    margin-bottom: 1.125rem;
+    padding-top: 0.75rem;
+    padding-bottom: 3px;
+    background: linear-gradient(var(--tab), var(--tab)) left bottom / calc(100% - 1.25rem) 3px no-repeat;
+}
+.wp-block-group.nn-sh::after {
+    --tail: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M0 22.5H6C13.5 22.5 18.5 18 18.5 12 18.5 7 15.5 4 12.5 4 10 4 8.5 6 9.5 8'/%3E%3C/svg%3E");
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1.25rem;
+    height: 1.5rem;
+    background: var(--tab);
+    -webkit-mask: var(--tail) center / contain no-repeat;
+    mask: var(--tail) center / contain no-repeat;
+}
+.nn-sh .nn-more {
+    margin-right: 1.125rem;
+}
+.nn-more {
+    margin: 0;
+    padding-bottom: 0.625rem;
+    color: var(--nn-ink3);
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 0.84375rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.nn-shelf .wp-block-group.nn-sh {
+    margin-top: 1.5rem;
+}
+.nn-shelf .nn-sh .wp-block-heading {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: fit-content;
+    height: 2.375rem;
+    margin: 0;
+    padding: 0 1.125rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+    background: var(--tab);
+    color: #fff;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.nn-shelf .nn-sh .wp-block-heading::before {
+    --ear: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12'%3E%3Cpath d='M0 12 5.2 2.2Q7-1 8.8 2.2L14 12Z'/%3E%3C/svg%3E");
+    content: "";
+    position: absolute;
+    top: -0.8125rem;
+    right: 0.75rem;
+    left: 0.75rem;
+    height: 0.875rem;
+    min-width: 2.875rem;
+    background: var(--tab);
+    -webkit-mask: var(--ear) left bottom / 1rem 0.875rem no-repeat, var(--ear) right bottom / 1rem 0.875rem no-repeat;
+    mask: var(--ear) left bottom / 1rem 0.875rem no-repeat, var(--ear) right bottom / 1rem 0.875rem no-repeat;
+}
+p.nn-shelf-hint {
+    margin: -0.375rem 0 0;
+    color: var(--wp--preset--color--ink-2);
+    font-size: 0.9375rem;
+}
+.nn-shelf-scroll {
+    margin-top: 0;
+    padding-bottom: 0.625rem;
+    overflow-x: auto;
+    scrollbar-color: var(--nn-line) transparent;
+    scrollbar-width: thin;
+}
+.nn-shelf-days {
+    display: flex;
+    gap: 1.75rem;
+    width: max-content;
+    padding-top: 1.625rem;
+}
+.nn-sday {
+    display: flex;
+    flex-direction: column;
+}
+.nn-sday__lbl {
+    display: flex;
+    align-items: baseline;
+    gap: 0.375rem;
+    margin-bottom: 1.375rem;
+    padding-left: 0.25rem;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 1.1875rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+}
+.nn-sday__lbl small {
+    color: var(--nn-ink3);
+    font-size: 0.71875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.nn-sday__lbl em {
+    align-self: center;
+    padding: 3px 0.5rem 2px;
+    border-radius: 999px;
+    background: var(--wp--preset--color--pink);
+    color: #fff;
+    font-size: 0.65625rem;
+    font-style: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.nn-sday--today .nn-sday__lbl {
+    color: var(--nn-l-anime);
+}
+.nn-sday__row {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.375rem;
+    padding-inline: 0.625rem;
+}
+.nn-sday__plank {
+    height: 0.75rem;
+    border-radius: 3px;
+    background: var(--nn-plank);
+    box-shadow: 0 7px 0 -2px color-mix(in srgb, var(--nn-plank) 22%, transparent);
+}
+.nn-book {
+    --c: var(--wp--preset--color--pink);
+    display: flex;
+    flex-shrink: 0;
+    align-items: stretch;
+    height: 16.875rem;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid var(--nn-outline);
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    background: var(--wp--preset--color--surface);
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+.nn-book:hover {
+    transform: translateY(-0.5rem);
+}
+.nn-book[aria-expanded="true"] {
+    transform: none;
+}
+.nn-spine {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.625rem;
+    width: 3.5rem;
+    padding: 0.875rem 0 0.75rem;
+    background: var(--c);
+    box-shadow: inset 5px 0 0 rgb(255 255 255 / 0.14), inset -5px 0 0 rgb(0 0 0 / 0.1);
+    color: #fff;
+}
+.nn-spine b {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 0.9375rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+}
+.nn-spine i {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #2b1a2e;
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 900;
+}
+.nn-spine small {
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 0.65625rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+.nn-cover {
+    display: none;
+    flex-direction: column;
+    width: 12.25rem;
+    border-left: 2px solid var(--nn-outline);
+}
+.nn-book[aria-expanded="true"] .nn-cover {
+    display: flex;
+}
+.nn-cover__img {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    background: var(--wp--preset--color--surface-2);
+}
+.nn-cover__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+}
+.nn-cover__info {
+    display: grid;
+    gap: 2px;
+    padding: 0.625rem 0.75rem 0.75rem;
+    border-top: 2px solid var(--nn-outline);
+}
+.nn-cover__info strong {
+    color: var(--wp--preset--color--ink);
+    font-family: var(--wp--preset--font-family--heading);
+    font-size: 0.90625rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+.nn-cover__info small {
+    color: var(--nn-ink3);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.nn-cover__go {
+    margin-top: 0.25rem;
+    color: var(--wp--preset--color--pink-deep);
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+.nn-cover__go::after {
+    content: " \2192";
+}
+
+@media (max-width: 640px) {
+    .wp-block-group.nn-shelf {
+        padding-inline: 1rem;
+    }
+    .nn-shelf .nn-sh .wp-block-heading {
+        padding: 0 0.75rem;
+        font-size: 0.875rem;
+    }
+    .nn-shelf .nn-more {
+        font-size: 0.71875rem;
+    }
+    .nn-shelf-scroll {
+        margin-inline: -1rem;
+        padding-inline: 1rem;
+    }
+    .nn-shelf-days {
+        gap: 1.25rem;
+    }
+    .nn-book {
+        height: 14.75rem;
+    }
+    .nn-spine {
+        width: 3.125rem;
+    }
+    .nn-cover {
+        width: 10.25rem;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .nn-book {
+        transition: none;
+    }
+}
+
+/* From the theme: All releases link */
+.nn-more a {
+    color: var(--nn-ink3);
+    text-decoration: none;
+}
+.nn-more a:hover {
+    color: var(--tab);
+}
